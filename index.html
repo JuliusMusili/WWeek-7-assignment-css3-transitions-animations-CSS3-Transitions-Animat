@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS & JS Animations Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Dynamic Styling & Animations</h1>
+
+  <!-- Part 1: CSS Animations & Transitions -->
+  <section>
+    <h2>Part 1: CSS3 Transitions & Animations</h2>
+    <button class="btn-hover">Hover Me</button>
+    <div class="fade-box"></div>
+    <div class="slide-box"></div>
+  </section>
+
+  <!-- Part 2: JavaScript Functions -->
+  <section>
+    <h2>Part 2: JavaScript Functions</h2>
+    <button onclick="showScopeExample()">Check Scope Example</button>
+    <p id="scope-output"></p>
+
+    <button onclick="calculateArea(5, 10)">Calculate Area (5x10)</button>
+    <p id="calc-output"></p>
+  </section>
+
+  <!-- Part 3: CSS + JS Combined -->
+  <section>
+    <h2>Part 3: Combining CSS & JavaScript</h2>
+    <button id="animate-btn">Animate Box</button>
+    <div class="animated-box"></div>
+
+    <button id="modal-btn">Open Modal</button>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <p>This is a modal with CSS animations!</p>
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

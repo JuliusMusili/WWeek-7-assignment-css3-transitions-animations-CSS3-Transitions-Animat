@@ -1,0 +1,99 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f9;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* ------------------------
+   Part 1: CSS Animations
+------------------------- */
+
+/* Button hover transition */
+.btn-hover {
+  padding: 12px 20px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.4s, transform 0.4s;
+}
+.btn-hover:hover {
+  background: #005fa3;
+  transform: scale(1.1);
+}
+
+/* Fade animation */
+.fade-box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 20px 0;
+  animation: fadeIn 3s infinite alternate;
+}
+@keyframes fadeIn {
+  from { opacity: 0.2; }
+  to { opacity: 1; }
+}
+
+/* Slide animation */
+.slide-box {
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  margin: 20px 0;
+  animation: slide 2s infinite alternate;
+}
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(150px); }
+}
+
+/* ------------------------
+   Part 3: JS + CSS Combined
+------------------------- */
+
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  margin-top: 20px;
+  transition: transform 0.6s ease;
+}
+.animated-box.active {
+  transform: rotate(180deg) scale(1.2);
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal.show {
+  display: flex;
+  animation: fadeInModal 0.5s;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  animation: slideUp 0.5s;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
